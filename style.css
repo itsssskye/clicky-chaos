@@ -33,3 +33,15 @@ body {
     cursor: pointer;
     transition: all 0.3s ease;
 }
+
+/* Click effect animation */
+@keyframes click-shrink {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(0.92); }
+  100% { transform: scale(1); }
+}
+
+/* When this class is added, it triggers the animation */
+.shrink-effect {
+  animation: click-shrink 0.2s ease;
+}
