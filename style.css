@@ -1,0 +1,13 @@
+/* Base style */
+body {
+    margin: 0;
+    height: 100vh;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
