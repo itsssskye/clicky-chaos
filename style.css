@@ -11,3 +11,25 @@ body {
     overflow: hidden;
 }
 
+/* Container */
+#container {
+    text-align: center;
+}
+
+/* Counter */
+#counter {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Chaos button */
+#chaos-button {
+    background: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 20px 40px;
+    font-size: 1.5rem;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
