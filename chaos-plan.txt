@@ -1,0 +1,107 @@
+Chaos Plan for Clicky Chaos Website
+=================================
+
+1 - A popup shows warnings with button that says "START CHAOS", after clicking button "STARTING CHAOS" text appears on screen for 3 seconds  
+2 - DVD logo bounces across the screen getting quicker by each click  
+3 - Counter text floats across the screen  
+4 - Button rotates 5 degrees every click  
+5 - Button color flashes randomly every 1s  
+6 - Background color changes through the color spectrum every click  
+7 - Button drops to the bottom and shelfs appear, you can drag the button by grabbing it's added handle using your cursor  
+8 - Different colored letters flashes across the screen  
+9 - Every button click summons a random gravity controlled emoji that you can also drag  
+10 - Vine boom every button click  
+11 - Adds phone, gets phone call every 30s and the ringtone is the chinese ringtone  
+12 - Scam pops-up appears every 30s that you have to click to remove  
+13 - A cheese emojis floats around without gravity  
+14 - Counter jumps up and down  
+15 - Screen shakes violently for 5s  
+16 - Eagle flies across screen with the text "MURICA 🍟🍔" behind it  
+17 - Button flickers every 0.5s  
+18 - Whole page spins 360 degrees for 5s  
+19 - Button rotates 180 degrees for 0.2s  
+20 - Background rapidly flashes 3 times  
+21 - Counter disappears for 5s  
+22 - Emoji storm  
+23 - Background becomes static-noise GIF  
+24 - Background rainbow fade  
+25 - Make button follow the cursor  
+26 - Button text changes to "WHY!?!?"  
+27 - Captcha required to click button  
+28 - Button becomes blurred for 1 minute  
+29 - A giant window is carved into the background,in the window you can see normal things, but a countdown starts, after the countdown finishes you get launched into space, then the window closes  
+30 - FNAF jumpscare  
+31 - Button shakes violently for 10s  
+32 - Add trailing sparkles to cursor  
+33 - CHAOS MODE ENABLED — screen flashes red  
+34 - Button grows huge then tiny fast then back to normal  
+35 - "HELP ME" flashes quickly  
+36 - Mouse cursor becomes massive  
+37 - Screen does a little screen shake  
+38 - Show a random word in background  
+39 - Button turns into an emoji for 5 clicks  
+40 - Page zooms in 1.2x briefly then goes back to normal after 5s  
+41 - Counter switches to red  
+42 - “Are you ok?” text flashes and vanishes 5 times in random positions  
+43 - Add random sound effects every button clicks  
+44 - "😵" emoji spins across screen and bounces off edges  
+45 - Screen goes black for 0.5s  
+46 - Counter becomes upside down  
+47 - Weird font on counter  
+48 - Get 5 points on Flappy Bird pop-up to click button  
+49 - Text color rotates colors  
+50 - Screen flashes white then returns to normal  
+51 - Play Amongus sound and a imposter appears in the corner, when you click it plays the sound again  
+52 - Button explodes into particles and the real button gets revealed again  
+53 - Add screen blur  
+54 - Button becomes partially transparent  
+55 - Counter jumps off screen then returns  
+56 - Everything flips upside down  
+57 - Counter says “PLEASE STOP”  
+58 - Invert all colors  
+59 - Page goes grayscale  
+60 - Counter spins and stops  
+61 - Button says “no.”  
+62 - Background becomes a slideshow of random meme images until there are no images left  
+63 - Button spins 360 on click  
+64 - A disco pops in and everything looks a bit darker and disco music starts playing, after 20s it stops and goes back to normal  
+65 - Site flashes black and white for 10s  
+66 - Wide creeper fills the screen unless you click the screen then it fades away  
+67 - Lightining bolt appears and screen flashes violently for 10s until everything goes back to normal  
+68 - Whole site shakes side to side for 10s  
+69 - Counter becomes random numbers for 5s  
+70 - “leave.” appears in the background  
+71 - Button says “enough.”  
+72 - The galaxy brain meme is implanted into the background and fades after the meme ends  
+73 - Add random bouncing text that says "PLEASE STOP THIS CHAOS"  
+74 - "CHAOS INTENSIFIES" text spins around and bounces off screen edges  
+75 - Font becomes Comic Sans  
+76 - Rain overlay appears on the screen for 10s  
+77 - Floating “?” symbols appear  
+78 - A job application appears and you are required to fill out every answer to click the button  
+79 - Button tries to run from mouse for 10s  
+80 - “nice.” appears at bottom corner  
+81 - Page zooms to 300% and snaps back  
+82 - Everything rotates slightly for 3 degrees  
+83 - Loud error beep plays for 1 minute straight  
+84 - Red text appears: “100 IS COMING…” for 5s  
+85 - Fade back in with tension sound  
+86 - “aaaaa” text scrolls across top like a news headline  
+87 - Jumpscare flash  
+88 - WiFi warning pop-up  
+89 - Fire gif in background  
+90 - Button pulses with heartbeat effect for 20s  
+91 - “You’re not supposed to be here” appears for 10s  
+92 - Button grows arms and legs (lol)  
+93 - “goodbye.” gets shown for 5  
+94 - Counter counts down for 5s then back up to normal  
+95 - Fade screen black for 1s  
+96 - Your location gets doxxed on screen and is unremovable  
+97 - Thunder sound effect plays and it starts raining again for 20s  
+98 - FINAL COUNTDOWN STARTS (10 to 0)  
+99 - “STOP CLICKING ME” shakes on screen for 10s  
+100 - Button splits into 3 and merges back to normal  
+
+--- After countdown ---
+
+ENDSCREEN - Show "YOU WIN, PLEASE GET AWAY FROM ME" with a restart button :)
