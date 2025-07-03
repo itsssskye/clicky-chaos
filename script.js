@@ -1,5 +1,5 @@
 // Track click and chaos stages
-let stageCount = 0;
+let clickCount = 0;
 let stage = 0;
 
 // Screen and logo dimensions
@@ -30,11 +30,11 @@ let dy = 2;
 
 // Run every time button is clicked
 button.addEventListener("click", () => {
-    stageCount++; // Add 1 to counter
-    counterText.textContent = `Clicks: ${stageCount}`; // Update counter text
+    clickCount++; // Add 1 to counter
+    counterText.textContent = `Clicks: ${clickCount}`; // Update counter text
 
     // Run animation only after 1st click
-    if (stageCount !== 1) {
+    if (clickCount !== 1) {
         button.classList.add("shrink-effect");
         setTimeout(() => button.classList.remove("shrink-effect"), 200);
     }
@@ -48,7 +48,7 @@ button.addEventListener("click", () => {
     }
 
     // Stage 2
-    if (stage === 2 && stageCount === 2) {
+    if (stage === 2 && clickCount === 2) {
         dvdLogo.style.display = "block";
 
         // Define screen size
@@ -69,7 +69,7 @@ button.addEventListener("click", () => {
     }
 
     // Speeds up every click after DVD starts
-    if (stage === 2 && stageCount > 2) {
+    if (stage === 2 && clickCount > 2) {
         dx *= 1.02;
         dy *= 1.02;
         const maxSpeed = 20;
