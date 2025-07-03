@@ -38,27 +38,34 @@ body {
 #chaos-popup {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.85);
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 9999;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 0.4s ease;
+}
+
+#chaos-popup.show {
+  opacity: 1;
+  transform: scale(1);
 }
 
 .popup-content {
-  background: #222;
+  background: #7e1c1c;
   padding: 2rem;
   border-radius: 1rem;
   text-align: center;
-  box-shadow: 0 0 30px red;
+  box-shadow: 0 0 30px rgb(0, 0, 0);
   animation: pulse 1s infinite;
 }
 
 #start-chaos-btn {
   margin-top: 1rem;
   padding: 0.7rem 1.5rem;
-  background: red;
+  background: #bd3232;
   color: white;
   font-weight: bold;
   border: none;
@@ -68,7 +75,7 @@ body {
 }
 
 #start-chaos-btn:hover {
-  background: darkred;
+  background: #9e2d2d;
 }
 
 #chaos-message {
@@ -87,9 +94,9 @@ body {
 }
 
 @keyframes pulse {
-  0% { box-shadow: 0 0 10px red; }
-  50% { box-shadow: 0 0 30px red; }
-  100% { box-shadow: 0 0 10px red; }
+  0% { box-shadow: 0 0 10px #4c1111; }
+  50% { box-shadow: 0 0 30px #4c1111; }
+  100% { box-shadow: 0 0 10px #4c1111; }
 }
 
 /* DVD logo */
@@ -97,13 +104,14 @@ body {
   position: absolute;
   width: 100px;
   height: 50px;
-  pointer-events: none;
-  z-index: 5;
-  user-select: none;
   display: none;
+  pointer-events: none;
+  user-select: none;
+  z-index: -5;
 
-  -webkit-mask-image: url("dvd-logo.svg");
-  mask-image: url("dvd-logo.svg");
+  /* Mask settings */
+  -webkit-mask-image: url("assets/dvd-logo.svg");
+  mask-image: url("assets/dvd-logo.svg");
   -webkit-mask-size: contain;
   mask-size: contain;
   -webkit-mask-repeat: no-repeat;
@@ -111,7 +119,8 @@ body {
   -webkit-mask-position: center;
   mask-position: center;
 
-  background-color: red; /* Default, will change in JS */
+  /* Default, will change in JS */
+  background-color: red;
 }
 
 /* Click effect animation */

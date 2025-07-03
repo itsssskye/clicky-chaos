@@ -1,8 +1,11 @@
-// Start click count at 0
+// Track click and chaos stages
 let stageCount = 0;
+let stage = 0;
 
 // Screen and logo dimensions
 let screenW, screenH, dvdW, dvdH;
+
+let initialized = false;
 
 // Grab elements
 
@@ -32,18 +35,49 @@ button.addEventListener("click", () => {
     stageCount++; // Add 1 to counter
     counterText.textContent = `Clicks: ${stageCount}`; // Update counter text
 
-    // Chaos 1
-    if (stageCount === 1) {
-        animateDVD(); // start DVD only on first click
+    // Run animation only after 1st click
+    if (stageCount !== 1) {
+        button.classList.add("shrink-effect");
+        setTimeout(() => button.classList.remove("shrink-effect"), 200);
     }
 
-    // Add class that triggers click animation
-    button.classList.add("shrink-effect");
+    // Stage 1
+    if (stage === 0) {
+        popup.style.display = "flex";
+        setTimeout(() => popup.classList.add("show"), 10);
+        stage = 1;
+        return;
+    }
 
-    // Remove class shortly after to complete animation
-    setTimeout(() => {
-        button.classList.remove("shrink-effect");
-    }, 200); // Match animation durations
+    // Stage 2
+    if (stage === 2 && stageCount === 2) {
+        dvdLogo.style.display = "block";
+
+        // Define screen size
+        screenW = window.innerWidth;
+        screenH = window.innerHeight;
+
+        // Define logo size
+        dvdW = dvdLogo.offsetWidth;
+        dvdH = dvdLogo.offsetHeight;
+
+        // Center DVD on screen
+        x = (screenW - dvdW) / 2;
+        y = (screenH - dvdH) / 2;
+        dvdLogo.style.left = x + "px";
+        dvdLogo.style.top = y + "px";
+
+        animateDVD();
+    }
+
+    // Speeds up every click after DVD starts
+    if (stage === 2 && stageCount > 2) {
+        dx *= 1.02;
+        dy *= 1.02;
+        const maxSpeed = 20;
+        dx = Math.sign(dx) * Math.min(Math.abs(dx), maxSpeed);
+        dy = Math.sign(dy) * Math.min(Math.abs(dy), maxSpeed);
+    }
 });
 
 // Button for chaos popup
@@ -56,21 +90,16 @@ startBtn.addEventListener("click", () => {
   setTimeout(() => {
     message.style.display = "none";
     main.style.display = "block";
-    dvdLogo.style.display = "block";
 
-    // Define screen and logo sizes
-    screenW = window.innerWidth;
-    screenH = window.innerHeight;
-    dvdW = dvdLogo.offsetWidth;
-    dvdH = dvdLogo.offsetHeight;
-
-    // Center DVD on start
-    x = (screenW - dvdW) / 2;
-    y = (screenH - dvdH) / 2;
+    stage = 2;
   }, 1000); // 1 second
 });
 
 function animateDVD() {
+  // Define screen size
+  screenW = window.innerWidth;
+  screenH = window.innerHeight;
+
   x += dx;
   y += dy;
 
