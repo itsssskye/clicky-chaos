@@ -5,8 +5,6 @@ let stage = 0;
 // Screen and logo dimensions
 let screenW, screenH, dvdW, dvdH;
 
-let initialized = false;
-
 // Grab elements
 
 // Main elements
