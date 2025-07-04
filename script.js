@@ -80,17 +80,43 @@ button.addEventListener("click", () => {
 
 // Button for chaos popup
 startBtn.addEventListener("click", () => {
-  
-  // Starting chaos text
-  popup.style.display = "none";
+  // Diable chaos button during animation sequence
+  button.disabled = true;
+  button.style.pointerEvents = "none";
+  button.style.opacity = "0.6";
+
+  // Play vine boom
+  const vineBoom = document.getElementById("vine-boom");
+  vineBoom.currentTime = 0;
+  vineBoom.play();
+
+  // Start popup zoom-out + chaos message zoom-in at the same time
+  popup.classList.add("popup-out");
   message.style.display = "block";
+  message.classList.add("chaos-text-in");
 
+  // Remove popup after animation finishes
   setTimeout(() => {
-    message.style.display = "none";
-    main.style.display = "block";
+    popup.style.display = "none";
+  }, 600);
 
-    stage = 2;
-  }, 1000); // 1 second
+  // After 1 second, fade out chaos message
+  setTimeout(() => {
+    message.classList.remove("chaos-text-in");
+    message.classList.add("chaos-fade-out");
+
+    // After fade-out, reveal main UI
+    setTimeout(() => {
+      message.style.display = "none";
+      main.style.display = "block";
+      stage = 2;
+
+      // Re-enable chaos button
+      button.disabled = false;
+      button.style.pointerEvents = "auto";
+      button.style.opacity = "1";
+    }, 600); // Match chaos-fade-out duration
+  }, 1300); // Delay before fading out chaos text
 });
 
 function animateDVD() {

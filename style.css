@@ -85,14 +85,18 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 5rem;
+  font-size: 5.5rem;
   font-weight: bold;
   color: white;
   background: black;
   padding: 1rem 2rem;
   border-radius: 1rem;
   display: none;
-  z-index: 9998;
+  z-index: 9999;
+  text-align: center;
+  opacity: 0;
+  pointer-events: none;
+  line-height: 1;
 }
 
 @keyframes pulse {
@@ -135,4 +139,70 @@ body {
 /* When this class is added, it triggers the animation */
 .shrink-effect {
   animation: click-shrink 0.2s ease;
+}
+
+@keyframes zoomFadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes zoomFadeOut {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+}
+
+@keyframes chaos-text-in {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.2);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+.chaos-text-in {
+  animation: chaos-text-in 0.6s ease-out forwards;
+  transform-origin: center;
+}
+
+@keyframes chaos-fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.chaos-fade-out {
+  animation: chaos-fade-out 0.6s ease-in forwards;
+}
+
+@keyframes popup-out {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+}
+
+.popup-out {
+  animation: popup-out 0.6s ease-in forwards;
 }
